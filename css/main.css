@@ -534,7 +534,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  background: yellow;
+  background: white;
+}
+
+.logo {
+  text-align: center;
+  padding: 20px 0;
 }
 
 /* ==========================================================================
