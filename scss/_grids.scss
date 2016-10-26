@@ -1,4 +1,39 @@
-$susy:(
-	columns: 12,
-	gutters:1/4,
+// $susy: (
+// 	flow: ltr, 
+// 	output: float, 
+// 	math: fluid, 
+// 	column-width: false, 
+// 	container: 700px, 
+// 	container-position: center, 
+// 	last-flow: to, 
+// 	columns: 12, 
+// 	gutters: 1/4,
+// 	gutter-positions: after,
+// 	global-box-sizing: border-box, 
+// 	debug:(
+// 		image:show, 
+// 		color:rgba(#66f, .25),
+// 		output: background, 
+// 		toggle: top left, 
+// 	),
+// ); 
+
+$susy: (
+	container-position: center, 
+	columns: 12, 
+	gutters: 1/4,
 ); 
+
+@include border-box-sizing; 
+
+.container{
+	@include container; 
+} 
+
+//breakpoints 
+$small: 1px 480px; //phone
+$medium: 481px 768px; //tablet 
+$large: 769px 960px; //computer 
+
+
+
