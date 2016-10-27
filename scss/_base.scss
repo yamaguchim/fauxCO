@@ -9,6 +9,13 @@
 // }
 @import 'susy';  
 
+.clearfix:after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+
 
 body{
 	background: url('../img/background.png'); 
@@ -20,9 +27,11 @@ body{
 	margin: 0 auto;  
 }
 
+//logo amd menu 
 .ag2 {
 	// background-color: #fae7b3; 
-	@include span (8 of 10); 
+	// @include span (8 of 10); 
+	@include full; 
 	margin: 0 auto; 
 	float:none;
 	// body h1 { 
@@ -30,15 +39,16 @@ body{
 	// padding-top: 0%; 
 	// }
 
-	#nav_container{ 
+	#navi{ 
 		margin: 0 auto; 
-		width: 70%;
+		// width: 70%;
 		@include span (8 of 10); 
 		margin: 0 auto; 
 		float:none;
 		#nav li{
 			@include navLi();
 			font-family: $fontheading; 
+			// width: 70%; 
 			a{ 
 				@include navLiA();
 				font-family: $fontheading; 
@@ -101,7 +111,7 @@ body{
 
 .ag1 {
 	background-color: #fae7b3; 
-	@include span (9 of 10); 
+	@include span (8 of 10); 
 	margin: 0 auto; 
 	float:none;
 

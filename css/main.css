@@ -533,6 +533,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
 body {
   background: url("../img/background.png");
   text-align: center;
@@ -551,41 +557,42 @@ body {
 }
 
 .ag2 {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin: 0 auto;
+  float: none;
+}
+.ag2 #navi {
+  margin: 0 auto;
   width: 79.59184%;
   float: left;
   margin-right: 2.04082%;
   margin: 0 auto;
   float: none;
 }
-.ag2 #nav_container {
-  margin: 0 auto;
-  width: 70%;
-  width: 79.59184%;
-  float: left;
-  margin-right: 2.04082%;
-  margin: 0 auto;
-  float: none;
-}
-.ag2 #nav_container #nav li {
+.ag2 #navi #nav li {
   list-style: none;
   display: block;
   float: left;
   margin: 1em;
   font-family: "Lobster";
 }
-.ag2 #nav_container #nav li a {
+.ag2 #navi #nav li a {
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
-  display: block;
+  display: inline block;
   text-decoration: none;
   color: #f0f0f0;
   font-size: 1.6em;
   margin: 0 .5em;
   font-family: "Lobster";
 }
-.ag2 #nav_container #nav li a:hover {
+.ag2 #navi #nav li a:hover {
   margin-top: 2px;
 }
-.ag2 #nav_container .rectangle {
+.ag2 #navi .rectangle {
   background: #a72c39;
   height: 62px;
   position: relative;
@@ -603,7 +610,7 @@ body {
   float: none;
   width: 200px;
 }
-.ag2 #nav_container .l-triangle-top {
+.ag2 #navi .l-triangle-top {
   border-color: #7f2230 transparent transparent;
   border-style: solid;
   border-width: 50px;
@@ -614,7 +621,7 @@ body {
   top: 1px;
   left: -50px;
 }
-.ag2 #nav_container .r-triangle-top {
+.ag2 #navi .r-triangle-top {
   border-color: #7f2230 transparent transparent;
   border-style: solid;
   border-width: 50px;
@@ -625,7 +632,7 @@ body {
   right: -45px;
   top: -107px;
 }
-.ag2 #nav_container .r-triangle-bottom {
+.ag2 #navi .r-triangle-bottom {
   border-color: transparent transparent #7f2230;
   border-style: solid;
   border-width: 50px;
@@ -639,7 +646,7 @@ body {
 
 .ag1 {
   background-color: #fae7b3;
-  width: 89.79592%;
+  width: 79.59184%;
   float: left;
   margin-right: 2.04082%;
   margin: 0 auto;
