@@ -31,7 +31,7 @@ body{
 .ag2 {
 	// background-color: #fae7b3; 
 	// @include span (8 of 10); 
-	@include full; 
+	@include span (9 of 10); 
 	margin: 0 auto; 
 	float:none;
 	// body h1 { 
@@ -134,12 +134,7 @@ body{
 
 // }
 
-p{
-	@include p; 
-}
-h2{
-	@include h2; 
-}
+
 #nav ul li{
 	float: left; 
 	width: 70%;
@@ -161,6 +156,12 @@ h2{
 	@include span (8 of 10);
 	float: none;
 	margin: 0 auto;
+	h2{
+		@include alternateh2; 
+	}
+	p{
+		@include alternatep;
+	}
 }
 .ag8,.ag10{
 	// background-color: $about-bg;; 
@@ -170,6 +171,15 @@ h2{
 	@include span (8 of 10);
 	float: none;
 	margin: 0 auto;
+	p{
+		@include p; 
+	}
+	h2{
+		@include h2; 
+	}
+	#guy{
+		margin-top: -1em;
+	}
 }
 
 // .ag10{
