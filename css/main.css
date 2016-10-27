@@ -539,6 +539,17 @@ textarea {
   clear: both;
 }
 
+.ag22 {
+  width: 48.97959%;
+  float: left;
+  margin-right: 2.04082%;
+  font-family: 'News Cycle', sans-serif;
+}
+
+.ag2 {
+  margin-top: -5em;
+}
+
 body {
   background: url("../img/background.png");
   text-align: center;
@@ -556,17 +567,93 @@ body {
   clear: both;
 }
 
-.ag2 {
-  width: 89.79592%;
+#nav li {
+  list-style: none;
+  display: block;
   float: left;
-  margin-right: 2.04082%;
-  margin: 0 auto;
-  float: none;
+  margin: 1em;
 }
 
-#nav ul li {
+#nav li a {
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  display: block;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1.6em;
+  margin: 0 .5em;
+  font-family: 'News Cycle', sans-serif;
+  text-align: center;
+}
+
+#nav li a:hover {
+  margin-top: 2px;
+}
+
+#ribbon {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.rectangle {
+  background: #245A82;
+  height: 62px;
+  position: relative;
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  z-index: 500;
+  /* the stack order: foreground */
+  margin: 3em 0;
+}
+
+.l-triangle-top {
+  border-color: #1E4A6B transparent transparent;
+  border-style: solid;
+  border-width: 50px;
+  height: 0px;
+  width: 0px;
+  position: relative;
   float: left;
-  width: 70%;
+  top: 1px;
+  left: -50px;
+}
+
+.l-triangle-bottom {
+  border-color: transparent transparent #1E4A6B;
+  border-style: solid;
+  border-width: 50px;
+  height: 0px;
+  width: 0px;
+  position: relative;
+  float: left;
+  top: -40px;
+  left: -150px;
+}
+
+.r-triangle-top {
+  border-color: #1E4A6B transparent transparent;
+  border-style: solid;
+  border-width: 50px;
+  height: 0px;
+  width: 0px;
+  position: relative;
+  float: right;
+  right: -45px;
+  top: -107px;
+}
+
+.r-triangle-bottom {
+  border-color: transparent transparent #1E4A6B;
+  border-style: solid;
+  border-width: 50px;
+  height: 0px;
+  width: 0px;
+  position: relative;
+  float: right;
+  top: -149px;
+  right: -145px;
 }
 
 .ag1 {
@@ -631,21 +718,6 @@ body {
 }
 .ag8 #guy, .ag10 #guy {
   margin-top: -1em;
-}
-
-.about {
-  background: rgba(244, 244, 244, 0.8);
-  border-radius: 6px;
-  float: left;
-  margin: 0 auto;
-  padding: 20px 0;
-  text-align: center;
-  font-family: 'Lobster Two', cursive;
-}
-.about p {
-  margin-left: 1em;
-  margin-right: 1em;
-  font-size: 35px;
 }
 
 /* ==========================================================================

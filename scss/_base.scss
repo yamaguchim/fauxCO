@@ -15,7 +15,14 @@
 	clear: both;
 }
 
+.ag22{
+	@include span (5 of 10);
+	font-family: 'News Cycle', sans-serif;
+}
 
+.ag2{
+	margin-top: -5em;
+}
 
 body{
 	background: url('../img/background.png'); 
@@ -27,119 +34,95 @@ body{
 	margin: 0 auto;  
 }
 
-//logo amd menu 
-.ag2 {
-	// background-color: #fae7b3; 
-	// @include span (8 of 10); 
-	@include span (9 of 10); 
-	margin: 0 auto; 
-	float:none;
-	// body h1 { 
-	// margin-bottom: 0; 
-	// padding-top: 0%; 
-	// }
-
-	// #navi{ 
-	// 	margin: 0 auto; 
-	// 	// width: 70%;
-	// 	@include span (8 of 10); 
-	// 	margin: 0 auto; 
-	// 	float:none;
-	// 	// #nav li{
-	// 		@include navLi();
-	// 		font-family: $fontheading; 
-	// 		// width: 70%; 
-	// 		width: 100%; 
-	// 		a{ 
-	// 			@include navLiA();
-	// 			font-family: $fontheading; 
-	// 		}
-	// 		a:hover{ 
-	// 			margin-top: 2px; 
-	// 		}
-	// 	 }
-	// }
-	// 	.rectangle{ 
-	// 	background: $rectangle;
-	// 	height: 62px; 
-	// 	position: relative;
-	// 	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,.55); 
-	// 	box-shadow: 0px 0px 4px rgba(0,0,0,.55); 
-	// 	-webkit-border-radius: 3px; 
-	// 	-moz-border-radius: 3px; 
-	// 	border-radius: 3px; 
-	// 	z-index: 500; 
-	// 	margin: 3em 0; 
-	// 	@include span (2 of 10); 
-	// 	margin: 0 auto; 
-	// 	float:none;
-	// 	width: 200px; 
-	// 	}
-	// 	.l-triangle-top{
-	// 	border-color: $rectangleD transparent transparent; 
-	// 	border-style: solid; 
-	// 	border-width: 50px; 
-	// 	height: 0px; 
-	// 	width: 0px; 
-	// 	position: relative;
-	// 	float: left; 
-	// 	top: 1px; 
-	// 	left: -50px; 
-	// 	}
-	// 	.r-triangle-top{
-	// 	border-color: $rectangleD transparent transparent; 
-	// 	border-style: solid; 
-	// 	border-width: 50px; 
-	// 	height: 0px; 
-	// 	width: 0px; 
-	// 	position: relative;
-	// 	float: right; 
-	// 	right: -45px; 
-	// 	top: -107px; 
-	// 	}
-	// 	.r-triangle-bottom{ 
-	// 	border-color: transparent transparent $rectangleD; 
-	// 	border-style: solid; 
-	// 	border-width: 50px; 
-	// 	height: 0px; 
-	// 	width: 0px; 
-	// 	position: relative;
-	// 	float: right; 
-	// 	top: -149px; 
-	// 	right: -145px; 
-	// }
-	// }
+#nav li {
+        list-style: none;
+        display: block;
+        float: left;
+        margin: 1em;
 }
 
-// .ag22 {
-// 	#nav{ 
-// 		// width: 70%;
-// 		// @include span (8 of 10); 
-// 		margin: 0 auto; 
-// 		float:none;
-// 		// #nav li{
-// 			@include navLi();
-// 			font-family: $fontheading; 
-// 			// width: 70%; 
-// 			// width: 100%; 
-// 			a{ 
-
-// 				@include navLiA();
-// 				font-family: $fontheading; 
-// 			}
-// 			a:hover{ 
-// 				margin-top: 2px; 
-// 			}
-// 		 }
-
-// }
-
-
-#nav ul li{
-	float: left; 
-	width: 70%;
+#nav li a {
+        text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+        display: block;
+        text-decoration: none;
+        color: #f0f0f0;
+        font-size: 1.6em;
+        margin: 0 .5em;
+        font-family: 'News Cycle', sans-serif;
+        text-align: center;
 }
 
+#nav li a:hover {
+        margin-top: 2px;
+}
+
+#ribbon {
+   margin: 0 auto;
+   width: 960px;
+}
+
+.rectangle {
+   background: #245A82;
+   height: 62px;
+   position: relative;
+   -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+   box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   z-index: 500; /* the stack order: foreground */
+   margin: 3em 0;
+}
+
+.l-triangle-top {
+   border-color: #1E4A6B transparent transparent;
+   border-style:solid;
+   border-width:50px;
+   height:0px;
+   width:0px;
+   position: relative;
+   float: left;
+   top: 1px;
+   left: -50px;
+}
+ 
+.l-triangle-bottom {
+   border-color: transparent transparent #1E4A6B;
+   border-style:solid;
+   border-width:50px;
+   height:0px;
+   width:0px;
+   position: relative;
+   float: left;
+   top: -40px;
+   left: -150px;
+}
+
+.r-triangle-top {
+   border-color: #1E4A6B transparent transparent;
+   border-style:solid;
+   border-width:50px;
+   height:0px;
+   width:0px;
+   position: relative;
+   float: right;
+   right: -45px;
+   top: -107px;
+}
+ 
+.r-triangle-bottom {
+   border-color: transparent transparent #1E4A6B;
+   border-style:solid;
+   border-width:50px;
+   height:0px;
+   width:0px;
+   position: relative;
+   float: right;
+   top: -149px;
+   right: -145px;
+}
+
+//body 
 
 .ag1 {
 	background-color: transparent;  
@@ -182,137 +165,3 @@ body{
 	}
 }
 
-// .ag10{
-// 	background-color: #ea8fc3; 
-// }
-
-// h2{ 
-// 	text-align: center; 
-// 	font-size: 1rem; 
-// 	font-weight: normal; 
-// 	padding-top: 1.8rem; 
-// 	padding-bottom: 1.8rem; 
-// }
-
-
-
-// body h1 { 
-// 	margin-bottom: 0; 
-// 	padding-top: 0%; 
-// }
-
-// h1,h2,h3,h4{
-// 	text-align: center; 
-// 	padding-bottom: 1%;  
-// 	font-size: 150%; 
-// 	font-weight: 700; 
-// 	font-family: $fontheading; 
-// }
-
-//MENU BANNER 
-// #nav li{
-// 	@include navLi();
-// 	font-family: $fontheading; 
-// 		a{ 
-// 			@include navLiA();
-// 			font-family: $fontheading; 
-// 		}
-// 		a:hover{ 
-// 			margin-top: 2px; 
-// 		}
-// }
-
-// #nav_container{ 
-// 	margin: 0 auto; 
-// 	width: 70%
-// 	@include span (8 of 10); 
-// 	margin: 0 auto; 
-// 	float:none;
-
-// }
-
-// .rectangle{ 
-// 	background: $rectangle;
-// 	height: 62px; 
-// 	position: relative;
-// 	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,.55); 
-// 	box-shadow: 0px 0px 4px rgba(0,0,0,.55); 
-// 	-webkit-border-radius: 3px; 
-// 	-moz-border-radius: 3px; 
-// 	border-radius: 3px; 
-// 	z-index: 500; 
-// 	margin: 3em 0; 
-// 	@include span (2 of 10); 
-// 	margin: 0 auto; 
-// 	float:none;
-// 	width: 200px; 
-
-// }
-
-// .l-triangle-top{
-// 	border-color: $rectangleD transparent transparent; 
-// 	border-style: solid; 
-// 	border-width: 50px; 
-// 	height: 0px; 
-// 	width: 0px; 
-// 	position: relative;
-// 	float: left; 
-// 	top: 1px; 
-// 	left: -50px; 
-// }
-
-// .l-triangle-bottom{
-// 	border-color: transparent transparent $rectangleD ; 
-// 	border-style: solid; 
-// 	border-width: 50px; 
-// 	height: 0px; 
-// 	width: 0px; 
-// 	position: relative;
-// 	float: left; 
-// 	top: -40px; 
-// 	left: -150px; 
-// }
-
-// .r-triangle-top{
-// 	border-color: $rectangleD transparent transparent; 
-// 	border-style: solid; 
-// 	border-width: 50px; 
-// 	height: 0px; 
-// 	width: 0px; 
-// 	position: relative;
-// 	float: right; 
-// 	right: -45px; 
-// 	top: -107px; 
-// }
-
-// .r-triangle-bottom{ 
-// 	border-color: transparent transparent $rectangleD; 
-// 	border-style: solid; 
-// 	border-width: 50px; 
-// 	height: 0px; 
-// 	width: 0px; 
-// 	position: relative;
-// 	float: right; 
-// 	top: -149px; 
-// 	right: -145px; 
-// }
-
-.about{
-	background: rgba(244,244,244,.8); 
-	border-radius: 6px; 
-	float: left; 
-	margin: 0 auto; 
-	padding: 20px 0; 
-	text-align: center; 
-	// margin-top: -1.5em; 
-	font-family: 'Lobster Two', cursive;
-	p{
-		margin-left: 1em; 
-		margin-right: 1em;  
-		font-size: 35px; 
-	}
-}
-
-// h2{
-// 	margin-bottom: -1em; 
-// }
