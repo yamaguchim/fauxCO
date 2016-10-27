@@ -134,6 +134,12 @@ body{
 
 // }
 
+p{
+	@include p; 
+}
+h2{
+	@include h2; 
+}
 #nav ul li{
 	float: left; 
 	width: 70%;
@@ -141,58 +147,42 @@ body{
 
 
 .ag1 {
-	// background-color: #fae7b3; 
-	@include box; 
-	@include span (9 of 10); 
+	background-color: transparent;  
+	@include box;   
+	@include span (8 of 10); 
 	margin: 0 auto; 
 	float:none;
 
+
 }
 
-.ag4,.ag5,.ag8,.ag9{
-	background-color: #ee9e9c; 
+.ag9{
+	background-color: rgba(240,240,240,1);
+	@include span (8 of 10);
+	float: none;
+	margin: 0 auto;
+}
+.ag8,.ag10{
+	// background-color: $about-bg;; 
 	// margin-top: 10em; 
+	// background-color: rgba(240,240,240,1); 
+	background-color: rgba(127,34,48,1);
+	@include span (8 of 10);
+	float: none;
+	margin: 0 auto;
 }
 
-//nesting? 
-.ag4, .ag5{ 
-	@include span (3 of 6); 
-	margin-top: 3em;
-}
-
-// .ag4{
-// 	margin-left: .25em; 
+// .ag10{
+// 	background-color: #ea8fc3; 
 // }
-.ag5{
-	@include last;
-	// margin-right: .25em; 
-}
-//end 
 
-.ag6{
-	// border-radius: 6px; 
-	// float: left; 
-	// margin: 0 auto; 
-	// padding: 20px 0; 
-	background-color: #f09671;
-	// margin-top: 10em;  
-}
-
-.ag7{
-	background-color: #f6d784;
-}
-
-.ag10{
-	background-color: #ea8fc3; 
-}
-
-h2{ 
-	text-align: center; 
-	font-size: 1rem; 
-	font-weight: normal; 
-	padding-top: 1.8rem; 
-	padding-bottom: 1.8rem; 
-}
+// h2{ 
+// 	text-align: center; 
+// 	font-size: 1rem; 
+// 	font-weight: normal; 
+// 	padding-top: 1.8rem; 
+// 	padding-bottom: 1.8rem; 
+// }
 
 
 
