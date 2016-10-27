@@ -39,79 +39,111 @@ body{
 	// padding-top: 0%; 
 	// }
 
-	#navi{ 
-		margin: 0 auto; 
-		// width: 70%;
-		@include span (8 of 10); 
-		margin: 0 auto; 
-		float:none;
-		#nav li{
-			@include navLi();
-			font-family: $fontheading; 
-			// width: 70%; 
-			a{ 
-				@include navLiA();
-				font-family: $fontheading; 
-			}
-			a:hover{ 
-				margin-top: 2px; 
-			}
-		}
-		.rectangle{ 
-		background: $rectangle;
-		height: 62px; 
-		position: relative;
-		-moz-box-shadow: 0px 0px 4px rgba(0,0,0,.55); 
-		box-shadow: 0px 0px 4px rgba(0,0,0,.55); 
-		-webkit-border-radius: 3px; 
-		-moz-border-radius: 3px; 
-		border-radius: 3px; 
-		z-index: 500; 
-		margin: 3em 0; 
-		@include span (2 of 10); 
-		margin: 0 auto; 
-		float:none;
-		width: 200px; 
-		}
-		.l-triangle-top{
-		border-color: $rectangleD transparent transparent; 
-		border-style: solid; 
-		border-width: 50px; 
-		height: 0px; 
-		width: 0px; 
-		position: relative;
-		float: left; 
-		top: 1px; 
-		left: -50px; 
-		}
-		.r-triangle-top{
-		border-color: $rectangleD transparent transparent; 
-		border-style: solid; 
-		border-width: 50px; 
-		height: 0px; 
-		width: 0px; 
-		position: relative;
-		float: right; 
-		right: -45px; 
-		top: -107px; 
-		}
-		.r-triangle-bottom{ 
-		border-color: transparent transparent $rectangleD; 
-		border-style: solid; 
-		border-width: 50px; 
-		height: 0px; 
-		width: 0px; 
-		position: relative;
-		float: right; 
-		top: -149px; 
-		right: -145px; 
-	}
-	}
+	// #navi{ 
+	// 	margin: 0 auto; 
+	// 	// width: 70%;
+	// 	@include span (8 of 10); 
+	// 	margin: 0 auto; 
+	// 	float:none;
+	// 	// #nav li{
+	// 		@include navLi();
+	// 		font-family: $fontheading; 
+	// 		// width: 70%; 
+	// 		width: 100%; 
+	// 		a{ 
+	// 			@include navLiA();
+	// 			font-family: $fontheading; 
+	// 		}
+	// 		a:hover{ 
+	// 			margin-top: 2px; 
+	// 		}
+	// 	 }
+	// }
+	// 	.rectangle{ 
+	// 	background: $rectangle;
+	// 	height: 62px; 
+	// 	position: relative;
+	// 	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,.55); 
+	// 	box-shadow: 0px 0px 4px rgba(0,0,0,.55); 
+	// 	-webkit-border-radius: 3px; 
+	// 	-moz-border-radius: 3px; 
+	// 	border-radius: 3px; 
+	// 	z-index: 500; 
+	// 	margin: 3em 0; 
+	// 	@include span (2 of 10); 
+	// 	margin: 0 auto; 
+	// 	float:none;
+	// 	width: 200px; 
+	// 	}
+	// 	.l-triangle-top{
+	// 	border-color: $rectangleD transparent transparent; 
+	// 	border-style: solid; 
+	// 	border-width: 50px; 
+	// 	height: 0px; 
+	// 	width: 0px; 
+	// 	position: relative;
+	// 	float: left; 
+	// 	top: 1px; 
+	// 	left: -50px; 
+	// 	}
+	// 	.r-triangle-top{
+	// 	border-color: $rectangleD transparent transparent; 
+	// 	border-style: solid; 
+	// 	border-width: 50px; 
+	// 	height: 0px; 
+	// 	width: 0px; 
+	// 	position: relative;
+	// 	float: right; 
+	// 	right: -45px; 
+	// 	top: -107px; 
+	// 	}
+	// 	.r-triangle-bottom{ 
+	// 	border-color: transparent transparent $rectangleD; 
+	// 	border-style: solid; 
+	// 	border-width: 50px; 
+	// 	height: 0px; 
+	// 	width: 0px; 
+	// 	position: relative;
+	// 	float: right; 
+	// 	top: -149px; 
+	// 	right: -145px; 
+	// }
+	// }
 }
 
+// .ag22 {
+// 	#nav{ 
+// 		// width: 70%;
+// 		// @include span (8 of 10); 
+// 		margin: 0 auto; 
+// 		float:none;
+// 		// #nav li{
+// 			@include navLi();
+// 			font-family: $fontheading; 
+// 			// width: 70%; 
+// 			// width: 100%; 
+// 			a{ 
+
+// 				@include navLiA();
+// 				font-family: $fontheading; 
+// 			}
+// 			a:hover{ 
+// 				margin-top: 2px; 
+// 			}
+// 		 }
+
+// }
+
+#nav ul li{
+	float: left; 
+	width: 70%;
+}
+
+
 .ag1 {
-	background-color: #fae7b3; 
-	@include span (8 of 10); 
+	// background-color: #fae7b3; 
+	@include box; 
+	@include span (9 of 10); 
 	margin: 0 auto; 
 	float:none;
 
@@ -119,6 +151,7 @@ body{
 
 .ag4,.ag5,.ag8,.ag9{
 	background-color: #ee9e9c; 
+	// margin-top: 10em; 
 }
 
 //nesting? 
@@ -137,7 +170,12 @@ body{
 //end 
 
 .ag6{
-	background-color: #f09671; 
+	// border-radius: 6px; 
+	// float: left; 
+	// margin: 0 auto; 
+	// padding: 20px 0; 
+	background-color: #f09671;
+	// margin-top: 10em;  
 }
 
 .ag7{
@@ -259,26 +297,22 @@ h2{
 // 	right: -145px; 
 // }
 
-// //about 
-// main, aside{
-// 	@include box(); 
-// }
+.about{
+	background: rgba(244,244,244,.8); 
+	border-radius: 6px; 
+	float: left; 
+	margin: 0 auto; 
+	padding: 20px 0; 
+	text-align: center; 
+	// margin-top: -1.5em; 
+	font-family: 'Lobster Two', cursive;
+	p{
+		margin-left: 1em; 
+		margin-right: 1em;  
+		font-size: 35px; 
+	}
+}
 
-// .container{
-// 	@include container();  
-// }
-
-// .one{
-// 	@include span(3); 
-// 	// @include full; 
-// 	// @include bleed(0 1);
-// }
-
-// .two{
-// 	@include span(3);
-// 	@include break; 
-// }
-
-// .three{
-// 	@include span(wide 6);
+// h2{
+// 	margin-bottom: -1em; 
 // }

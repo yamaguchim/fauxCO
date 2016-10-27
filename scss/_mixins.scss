@@ -1,9 +1,11 @@
 //menu 
 @mixin navLi(){
 	list-style: none; 
-	display: block; 
-	float: left; 
-	margin: 1em; 
+	display: inline block; 
+	// float: left; 
+	float: none; 
+	// margin: 1em; 
+	padding-right: 20px; 
 }
 
 @mixin navLiA{
@@ -12,13 +14,13 @@
 	text-decoration: none; 
 	color: #f0f0f0; 
 	font-size: 1.6em; 
-	margin: 0 .5em; 
+	// margin: 0 .5em; 
 }
 
-//about 
+//main div box  
 @mixin box(){
 	background: $about-bg;
-	border: solid 1px rgba(127,34,48,.25); 
+	// border: solid 1px rgba(224,224,224,.25); 
 	padding: 10px; 
 }
 
